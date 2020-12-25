@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="utilities.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon.ico">
+  <title>ToDo!</title>
+</head>
+
+<body>
+
+  <!-- Frist Container -->
+
+  <section id="first-container">
+
+    <!-- Hero - Image -->
+
+    <div class="hero">
+      <img src="../9.todo-list/images/to-do-list.png" class="hero__img">
+    </div>
+
+    <!-- Hero - Slogan -->
+
+    <div class="hero__slogan">
+      <h1 class="slogan">Your Key To Successful Move, Let's Get Listed!</h1>
+    </div>
+
+    <!-- Hero - Button -->
+
+    <div class="btn">
+      <a href="#second-container"><button class="arrow-btn"><i class="fas fa-arrow-down"></i></button></a>
+    </div>
+
+  </section>
+
+
+  <!-- Second Container -->
+
+  <section id="second-container">
+
+    <!-- Second Container - Instructions -->
+
+    <div class="instruction">
+      <h1 class="instruction__title">How it works</h1>
+    </div>
+
+    <!-- Second Container - Cards -->
+
+    <div class="cards">
+      <div class="card">
+        <h1 class="card__number">1</h1>
+        <h2 class="card__description">Write in the input what needs<br> to be done and then press the  plus button, to add the "Todo" </h2>
+      </div>
+      <div class="card">
+        <h1 class="card__number">2</h1>
+        <h2 class="card__description">Press the trash button if you <br> want to delete a "Todo"</h2>
+      </div>
+      <div class="card">
+        <h1 class="card__number">3</h1>
+        <h2 class="card__description">Press the land button if you<br> have completed a "Todo"</h2>
+      </div>
+    </div>
+
+    <!-- Second Container -  Button -->
+
+    <div class="btn">
+      <a href="#first-container"><button class="arrow-btn"><i class="fas fa-arrow-up"></i></button></a><a
+        href="#third-container"><button class="arrow-btn"><i class="fas fa-arrow-down"></i></button></a>
+    </div>
+
+  </section>
+
+
+
+  <!-- Third container -->
+
+  <section id="third-container">
+
+    <!-- Todo Intro -->
+
+    <div class="todo-intro">
+      <h1 class="intro__title">MY TO DO LIST:</h1>
+    </div>
+
+
+    <!-- Todo Maker -->
+
+    <div class="todo-maker">
+      <form action="">
+        <input type="text" class="todo-input">
+        <button type="submit" class="todo-button">
+          <i class="fas fa-plus"></i>
+        </button>
+      </form>
+
+
+
+      <div class="todo-container">
+        <ul class="todo-list">
+        </ul>
+      </div>
+    </div>
+
+    <div class="btn">
+      <a href="#second-container"><button class="arrow-btn"><i class="fas fa-arrow-up"></i></button></a>
+    </div>
+
+  </section>
+  <script src="app.js"></script>
+</body>
+
+</html>

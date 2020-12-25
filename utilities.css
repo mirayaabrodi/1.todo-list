@@ -1,0 +1,141 @@
+/* All Arrow Buttons */
+
+.btn a .arrow-btn:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0.2rem 0.2rem 2rem rgba(0, 0, 0, 0.219);
+}
+
+.btn a .arrow-btn:active,
+.btn a .arrow-btn:focus {
+  transform: translateY(-0.2rem);
+  box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.03);
+  outline: none;
+}
+
+/* Second Container - Cards */
+
+#second-container .cards .card:nth-child(2) {
+  animation-name: down-coming;
+  animation-duration: 1s;
+}
+
+#second-container .cards .card:first-child {
+  animation-duration: 1s;
+  animation-name: right-coming;
+}
+
+#second-container .cards .card:last-child {
+  animation-duration: 1s;
+  animation-name: left-coming;
+}
+
+#second-container .cards .card:hover {
+  transform: scale(1.02);
+}
+
+/* Third COntainer - Todo Container */
+
+form input:focus {
+  outline: none;
+}
+
+form button:focus {
+  outline: none;
+}
+
+form button:hover {
+  background-color: #4accb4;
+  color: var(--color-white);
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.complete-btn:hover {
+  background: #39a439;
+}
+
+.complete-btn:focus {
+  outline: none;
+}
+
+.trash-btn:hover {
+  background: #f3582d;
+}
+
+.trash-btn:focus {
+  outline: none;
+}
+
+#third-container form button:hover {
+  color: #64c5b3;
+  transform: rotate(180deg);
+}
+
+/* Animation */
+
+@keyframes upAndDown {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-2rem);
+  }
+}
+
+@keyframes up-coming {
+  from {
+    opacity: 0;
+    transform: translateY(2.5rem);
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes down-coming {
+  from {
+    opacity: 0;
+    transform: translateY(-10rem);
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes right-coming {
+  from {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  to {
+    transform: translatex(0);
+    opacity: 1;
+  }
+}
+
+@keyframes left-coming {
+  from {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  to {
+    transform: translatex(0);
+    opacity: 1;
+  }
+}
