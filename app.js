@@ -8,7 +8,7 @@ const todoList = document.querySelector(".todo-list");
 todoButton.addEventListener("click", addTodo);
 todoList.addEventListener("click", deleteCheck);
 
-// Functions
+
 
 // Function
 
