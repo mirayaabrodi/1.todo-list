@@ -1,4 +1,4 @@
-# Spa Dog :dog:
+# ToDo! :heavy_check_mark:
 
 A website where you can organize yourself with a to-do list, where you can complete your "todos" and delete them at the end of the day. :tada:
 
